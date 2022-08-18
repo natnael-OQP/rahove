@@ -1,14 +1,19 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html {
+        font-family: 'Montserrat', system-ui, sans-serif;
+    }
+}
 
-body{
-    background-color:#F7F6FC;
+body {
+    background-color: #fff;
     width: 100%;
     height: 100%;
 }
+
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
@@ -23,7 +28,7 @@ body{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #48546E;
+    background: #48546e;
     border-radius: 100vh;
 }
 /* Handle on hover */
@@ -31,36 +36,20 @@ body{
     background: #a0aec0;
 }
 
-
 @layer components {
-    .fx{
-        @apply flex items-center space-x-2 cursor-pointer
+    .fx {
+        @apply flex items-center;
     }
-    .fc{
-        @apply flex items-center justify-center space-x-2 cursor-pointer
-    } 
-    .fy{
-        @apply flex flex-col
+    .fc {
+        @apply flex items-center justify-center;
     }
-    .an{
-        @apply hover:scale-105 transition transform ease-in-out duration-200 tracking-wide hover:tracking-wider
+    .fy {
+        @apply flex flex-col;
     }
-    .sideh3{
-        @apply text-sm font-semibold hover:font-medium  font-mono text-color2
+    .an {
+        @apply tracking-wide transition duration-200 ease-in-out transform hover:scale-105 hover:tracking-wider;
     }
-    .sideh5{
-        @apply text-base font-medium text-color3 font-popi text-right
-    }
-    .sd{
-        @apply shadow-[#303C55] shadow-md
-    }
-    .br{
-        @apply border-r border-gray-900
-    }
-    .bl{
-        @apply border-l border-gray-900
-    }
-    .navBtn{
-        @apply text-sm font-medium font-popi tracking-wide text-color3 
+    .navBtn {
+        @apply text-sm font-semibold text-black uppercase font-mont cursor-pointer;
     }
 }

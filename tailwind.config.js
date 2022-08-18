@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
     content: [
         './pages/**/*.{js,ts,jsx,tsx}',
@@ -7,7 +8,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                Pop: ['Poppins', 'sans-serif'],
+                mont: ['Montserrat', ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 color1: '#64ffda',
