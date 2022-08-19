@@ -40,16 +40,19 @@ body {
     .fx {
         @apply flex items-center;
     }
-    .fc {
+    .fxc {
         @apply flex items-center justify-center;
     }
     .fy {
         @apply flex flex-col;
     }
+    .fyc {
+        @apply flex flex-col items-center justify-center;
+    }
     .an {
         @apply tracking-wide transition duration-200 ease-in-out transform hover:scale-105 hover:tracking-wider;
     }
     .navBtn {
-        @apply text-sm font-semibold text-black uppercase font-mont cursor-pointer;
+        @apply text-sm font-semibold text-black uppercase cursor-pointer font-mont;
     }
 }
