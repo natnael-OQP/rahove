@@ -26,7 +26,7 @@ export default function Home() {
     return (
         <div className="w-full h-full">
             {/* landing page */}
-            <div className="w-full h-screen px-10 max-w-7xl mx-auto relative">
+            <div className="relative w-full h-screen px-10 mx-auto max-w-7xl">
                 {/* left button */}
                 <div
                     className="absolute left-10 top-[47%] w-6 h-7 cursor-pointer z-40"
@@ -76,15 +76,14 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={` w-[75vw] mx-auto bg-[#D5D5D5] h-[183px] rounded-2xl shadow-md z-40 ${currentIndex == 1 ? "-bottom-[6%]" : currentIndex == 2 ? "-bottom-[9%]" : "-bottom-[10%]"} absolute left-0 right-0 p-5`}>
-                    <h1 className="text-xl font-mont text-black font-bold text-center ">WHO WE ARE</h1>
+                    <h1 className="text-xl font-bold text-center text-black font-mont ">WHO WE ARE</h1>
                     <p className="text-xs font-normal w-[50%] mx-auto text-center mt-4">
                         We are a digital transformation consultancy and software development company that provides cutting edge engineering solutions, helping Fortune 500 companies and enterprise clients untangle complex issues that always emerge during their digital evolution journey.
                     </p>
                 </div>
             </div>
-
             {/* WHAT WE OFFER */}
-            <div className="w-full h-full py-36 relative flex flex-col items-center justify-center ">
+            <div className="relative flex flex-col items-center justify-center w-full h-full py-36 ">
                 <Image
                     layout="fill"
                     objectFit="cover"
@@ -92,7 +91,7 @@ export default function Home() {
                     alt="logo"
                 />
                 <div className="relative">
-                    <h1 className="text-2xl my-10 font-bold font-mont">
+                    <h1 className="my-10 text-2xl font-bold font-mont">
                         WHAT WE <span className="text-[#40AA97]">OFFER  </span>
                     </h1>
                     <div className="bg-[#40AA97] absolute right-1 bottom-10 h-[2px] w-[80px]" />
@@ -111,8 +110,53 @@ export default function Home() {
                 </div>
             </div>
             {/* client Success */}
-            <div className="bg-[#FAFAFA] h-[80vh] w-full">
-
+            <div className="bg-[#FAFAFA] h-full  w-full py-16 fyc ">
+                <h1 className="m-5 text-2xl font-bold font-mont">
+                    CLIENT SUCCESS
+                </h1>
+                <div className="fx gap-x-2">
+                    <span className="text-[#40AA97] text-[10px] font-bold">ALL CASE STUDIES  </span>
+                    <div className="relative w-3 h-3">
+                        <Image
+                            layout="fill"
+                            objectFit="contain"
+                            src="/assets/icons/rightVector.png"
+                            alt="logo"
+                        />
+                    </div>
+                </div>
+                {/*card*/}
+                <div className="mt-10 w-[60vw] bg-white shadow-xl h-[350px] flex rounded-md overflow-hidden">
+                    {/* image */}
+                    <div className='flex-[.6] h-full '>
+                        <div className='relative w-full h-[80%]'>
+                            <Image
+                                layout="fill"
+                                objectFit="cover"
+                                src="/assets/images/showcase.png"
+                                alt="logo"
+                            />
+                        </div>
+                        <div className='h-[70px] w-full gap-1 grid grid-cols-3'>
+                            <div className='relative flex items-center justify-center border border-r shadow-sm'>
+                                <div className='relative w-[60%] h-[60%]  '>
+                                    <Image
+                                        layout="fill"
+                                        objectFit="contain"
+                                        src="/assets/images/client-logo1.png"
+                                        alt="logo"
+                                    />
+                                </div>
+                                <div className="bg-[#40AA97] h-[2px] w-full absolute bottom-0 left-0" />
+                            </div>
+                        </div>
+                    </div>
+                    {/* info section */}
+                    <div className="flex-[.4] px-6 mt-10 ">
+                        <h1 className="text-lg font-bold leading-5 font-mont">Ethiopian Investment Commission</h1>
+                        <p className="text-xs font-[400] mt-5 w-[90%] "> Ethiopian investment commission finds a fresh way to engage foreginers that want to invest whenever and whereever they are by creating a website and its system behind.</p>
+                    </div>
+                </div>
             </div>
         </div>
     );
