@@ -2,10 +2,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
 import Slide from '../components/slide';
-import SlideData from '../lib/data';
+import WhatWeOfferCard from '../components/WhatWeOfferCard';
+import { SlideData, WhatWeOfferCardsData } from '../lib/data';
 
 export default function Home() {
-
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const increment = () => {
@@ -23,7 +23,6 @@ export default function Home() {
             setCurrentIndex(currentIndex - 1)
         }
     };
-
     return (
         <div className="w-full h-full">
             {/* landing page */}
@@ -52,7 +51,7 @@ export default function Home() {
                         alt="logo"
                     />
                 </div>
-                {/* swiper container */}
+                {/* slider container */}
                 <div className="w-full h-[600px] relative z-30 ">
                     {/* background image */}
                     <Image
@@ -83,15 +82,37 @@ export default function Home() {
                     </p>
                 </div>
             </div>
-            {/* other page */}
 
-            <div className="w-full h-[90vh] relative">
+            {/* WHAT WE OFFER */}
+            <div className="w-full h-full py-36 relative flex flex-col items-center justify-center ">
                 <Image
                     layout="fill"
                     objectFit="cover"
                     src="/assets/images/bg2.png"
                     alt="logo"
                 />
+                <div className="relative">
+                    <h1 className="text-2xl my-10 font-bold font-mont">
+                        WHAT WE <span className="text-[#40AA97]">OFFER  </span>
+                    </h1>
+                    <div className="bg-[#40AA97] absolute right-1 bottom-10 h-[2px] w-[80px]" />
+                </div>
+                <div className=" grid grid-cols-3 gap-[1px] max-w-[73vw] mx-auto h-[330px] bg-gray-200 rounded-md shadow-md overflow-hidden ">
+                    {
+                        WhatWeOfferCardsData.map((item, index) => (
+                            <WhatWeOfferCard
+                                key={item.id}
+                                icon={item.icon}
+                                description={item.description}
+                                title={item.title}
+                            />
+                        ))
+                    }
+                </div>
+            </div>
+            {/* client Success */}
+            <div className="bg-[#FAFAFA] h-[80vh] w-full">
+
             </div>
         </div>
     );
