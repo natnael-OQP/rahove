@@ -3,8 +3,8 @@ import React from 'react'
 
 function WhatWeOfferCard({ icon, title, description }) {
     return (
-        <div className="flex p-5  bg-white z-50">
-            <div className="w-28 h-12 mt-3  relative ">
+        <div className="z-40 flex p-5 bg-white">
+            <div className="relative h-12 mt-3 w-28 ">
                 <Image
                     layout="fill"
                     objectFit="contain"
@@ -13,8 +13,8 @@ function WhatWeOfferCard({ icon, title, description }) {
                 />
             </div>
             <div className="flex flex-col ml-5">
-                <h1 className="text-black text-sm  font-medium ">{title}</h1>
-                <p className="text-gray-600 text-xs font-normal mt-3" >{description}</p>
+                <h1 className="text-sm font-medium text-black ">{title}</h1>
+                <p className="mt-3 text-xs font-normal text-gray-600" >{description}</p>
             </div>
         </div>
     )
