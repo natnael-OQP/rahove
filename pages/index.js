@@ -29,7 +29,7 @@ export default function Home() {
             <div className="w-full h-screen px-10 max-w-7xl mx-auto relative">
                 {/* left button */}
                 <div
-                    className="absolute left-10 top-[47%] w-6 h-7 cursor-pointer z-50"
+                    className="absolute left-10 top-[47%] w-6 h-7 cursor-pointer z-40"
                     onClick={decrement}
                 >
                     <Image
@@ -41,7 +41,7 @@ export default function Home() {
                 </div>
                 {/* right button */}
                 <div
-                    className="absolute right-10 top-[47%] w-6 h-7 cursor-pointer z-50 "
+                    className="absolute right-10 top-[47%] w-6 h-7 cursor-pointer z-40 "
                     onClick={increment}
                 >
                     <Image
@@ -75,7 +75,7 @@ export default function Home() {
                         }
                     </div>
                 </div>
-                <div className={` w-[75vw] mx-auto bg-[#D5D5D5] h-[183px] rounded-2xl shadow-md z-50 ${currentIndex == 1 ? "-bottom-[6%]" : currentIndex == 2 ? "-bottom-[9%]" : "-bottom-[10%]"} absolute left-0 right-0 p-5`}>
+                <div className={` w-[75vw] mx-auto bg-[#D5D5D5] h-[183px] rounded-2xl shadow-md z-40 ${currentIndex == 1 ? "-bottom-[6%]" : currentIndex == 2 ? "-bottom-[9%]" : "-bottom-[10%]"} absolute left-0 right-0 p-5`}>
                     <h1 className="text-xl font-mont text-black font-bold text-center ">WHO WE ARE</h1>
                     <p className="text-xs font-normal w-[50%] mx-auto text-center mt-4">
                         We are a digital transformation consultancy and software development company that provides cutting edge engineering solutions, helping Fortune 500 companies and enterprise clients untangle complex issues that always emerge during their digital evolution journey.
