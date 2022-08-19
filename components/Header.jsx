@@ -10,8 +10,6 @@ function Header() {
         })
         , [])
 
-    console.log(scrollPosition);
-
     const style = scrollPosition >= 50 ? "bg-white z-50 shadow-sm h-20" : ""
 
     return (
