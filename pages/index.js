@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
+import OfficeCard from '../components/OfficeCard';
 import Slide from '../components/slide';
 import WhatWeOfferCard from '../components/WhatWeOfferCard';
 import { SlideData, WhatWeOfferCardsData } from '../lib/data';
@@ -156,6 +157,35 @@ export default function Home() {
                         <h1 className="text-lg font-bold leading-5 font-mont">Ethiopian Investment Commission</h1>
                         <p className="text-xs font-[400] mt-5 w-[90%] "> Ethiopian investment commission finds a fresh way to engage foreginers that want to invest whenever and whereever they are by creating a website and its system behind.</p>
                     </div>
+                </div>
+            </div>
+            {/*  */}
+            <div className="bg-white h-full  w-full py-20 fyc">
+                <h1 className="m-5 text-2xl font-bold font-mont">
+                    OUR OFFICES
+                </h1>
+                <p className="text-xs font-[400]  w-[60%] text-center ">
+                    Rahove Technologies operates in multiple offices and development centers across Ethiopia and Africa. Reach out to us for software development services in your region.
+                </p>
+                <div className="w-[60%] fx justify-center gap-2 mt-10 ">
+                    <OfficeCard image="/assets/images/BDR.png" location="BAHIR DAR" />
+                    <OfficeCard image="/assets/images/addise ababa.png" location="ADDISE ABABA" />
+                    <OfficeCard image="/assets/images/adama.png" location="ADAMA" />
+                </div>
+            </div>
+            <div className="h-screen bg-white fyc relative">
+                <div className="absolute  top-0 left-0 h-[50vh] w-full">
+                    <div className="bg-black w-full h-full  relative">
+                        <Image
+                            layout="fill"
+                            objectFit="cover"
+                            src="/assets/images/bg3.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div className=" w-[400px] h-[400px] bg-white z-50 rounded-md shadow-md">
+
                 </div>
             </div>
         </div>
