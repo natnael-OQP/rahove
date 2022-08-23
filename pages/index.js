@@ -184,7 +184,7 @@ export default function Home() {
                         />
                     </div>
                 </div>
-                <div className=" w-[56%] h-[500px]  z-50 flex items-center ">
+                <div className=" w-[56%] h-[500px]  z-40 flex items-center ">
                     <div className="rounded-md shadow-md bg-white flex-[.65] h-full p-5 overflow-hidden">
                         <h1 className="text-lg font-medium font-mont text-center">WANT TO START <span className="text-[#29A790]">A PROJECT?</span></h1>
                         <div className="mt-6 fyc">
